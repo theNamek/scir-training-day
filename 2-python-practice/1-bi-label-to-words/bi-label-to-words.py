@@ -20,7 +20,15 @@ def read_instance(fp):
 
 def bi2words(chars):
     # insert your code here
-
+    for i in range(0, len(chars) - 3):
+        if i % 2 == 0:
+            if chars[i + 3] == 'B':
+                print chars[i]
+                print ' '
+            else:
+                i += 2
+        else:
+            i += 1
 
 if __name__=="__main__":
     try:
